@@ -1,1 +1,263 @@
 
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background: #1e293b;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* Home Section */
+.home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #0f172a
+    );
+
+    animation: fadeIn 2s ease;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #38bdf8;
+}
+
+.home h2 {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.home p {
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Sections */
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card,
+.profile-card {
+    background: #1e293b;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.4s;
+    animation: slideUp 1s ease;
+}
+
+.card:hover,
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    border-color: #38bdf8;
+}
+
+.card h3,
+.profile-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.card p,
+.profile-card p {
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+/* Skills and Hobbies */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 18px 30px;
+    border-radius: 10px;
+    border: 1px solid #38bdf8;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: scale(1.1);
+}
+
+/* Contact Links */
+#contact a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #1e293b;
+    text-align: center;
+    padding: 20px;
+    color: #cbd5e1;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 27px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
+
