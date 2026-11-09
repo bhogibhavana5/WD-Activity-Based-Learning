@@ -1,1 +1,230 @@
+<body>
 
+    <!-- Navigation -->
+    <header>
+        <h1>ABC College</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner" id="home">
+        <div>
+            <h2>Welcome to ABC College</h2>
+            <p>Learn Today, Lead Tomorrow</p>
+            <button onclick="document.getElementById('admissions').scrollIntoView()">
+                Apply Now
+            </button>
+        </div>
+    </div>
+
+    <!-- About College -->
+    <section id="about">
+        <h2>About Our Institution</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>
+                    To become a leading institution providing quality education
+                    and creating responsible future leaders.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide academic excellence, innovation, discipline,
+                    and practical knowledge to students.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Our Institution</h3>
+                <p>
+                    ABC College offers excellent academic opportunities
+                    and a student-friendly learning environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments and Courses -->
+    <section id="departments">
+        <h2>Departments & Courses</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Computer Science</h3>
+                <p>B.Tech CSE</p>
+                <p>Artificial Intelligence</p>
+                <p>Data Science</p>
+            </div>
+
+            <div class="card">
+                <h3>Electronics</h3>
+                <p>B.Tech ECE</p>
+                <p>Communication Systems</p>
+            </div>
+
+            <div class="card">
+                <h3>Mechanical</h3>
+                <p>B.Tech Mechanical Engineering</p>
+                <p>Manufacturing Technology</p>
+            </div>
+
+            <div class="card">
+                <h3>Civil</h3>
+                <p>B.Tech Civil Engineering</p>
+                <p>Structural Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section id="faculty">
+        <h2>Our Faculty</h2>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="Principal">
+                <h3>Dr. Ravi Kumar</h3>
+                <p>Principal</p>
+                <p>Academic Leadership</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Faculty">
+                <h3>Prof. Priya Sharma</h3>
+                <p>HOD - CSE</p>
+                <p>Computer Science</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Faculty">
+                <h3>Prof. Arjun Reddy</h3>
+                <p>Assistant Professor</p>
+                <p>Artificial Intelligence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions -->
+    <section class="admission" id="admissions">
+        <h2>Admission Procedure</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Step 1</h3>
+                <p>Visit the college admission portal.</p>
+            </div>
+
+            <div class="card">
+                <h3>Step 2</h3>
+                <p>Fill in the application form.</p>
+            </div>
+
+            <div class="card">
+                <h3>Step 3</h3>
+                <p>Submit academic documents.</p>
+            </div>
+
+            <div class="card">
+                <h3>Step 4</h3>
+                <p>Complete admission and fee payment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Facilities -->
+    <section id="facilities">
+        <h2>Campus Facilities</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>📚 Library</h3>
+                <p>Well-equipped library with books and digital resources.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Computer Labs</h3>
+                <p>Modern laboratories with advanced computing facilities.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏀 Sports</h3>
+                <p>Indoor and outdoor sports facilities for students.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏠 Hostel</h3>
+                <p>Comfortable accommodation for students.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚌 Transport</h3>
+                <p>College buses for convenient student transportation.</p>
+            </div>
+
+            <div class="card">
+                <h3>🍽️ Canteen</h3>
+                <p>Hygienic food and refreshments on campus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2>College Events</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>Annual Day</h3>
+                <p>Celebrating student achievements and cultural talents.</p>
+            </div>
+
+            <div class="card">
+                <h3>Technical Fest</h3>
+                <p>Technical competitions, coding events, and innovation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sports Meet</h3>
+                <p>Annual sports competitions and athletic activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Workshop</h3>
+                <p>Expert sessions and hands-on learning opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <p><strong>ABC College</strong></p>
+        <p>Address: College Road, Andhra Pradesh, India</p>
+        <p>Email: info@abccollege..edu</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Website: www.abccollege.edu</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ABC College. All Rights Reserved.</p>
+        <p>Designed using HTML, CSS and JavaScript</p>
+    </footer>
+
+</body>
+</html>
