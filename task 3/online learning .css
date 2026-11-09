@@ -1,1 +1,226 @@
+<body>
 
+    <!-- Navigation Bar -->
+    <header>
+        <h1>EduLearn</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <h2>Learn New Skills Online</h2>
+        <p>Explore professional courses and improve your knowledge.</p>
+        <button onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+            Explore Courses
+        </button>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="categories" id="categories">
+        <h2>Course Categories</h2>
+
+        <div class="category-list">
+            <div class="category" onclick="filterCourses('all')">All Courses</div>
+            <div class="category" onclick="filterCourses('programming')">Programming</div>
+            <div class="category" onclick="filterCourses('design')">Web Design</div>
+            <div class="category" onclick="filterCourses('ai')">Artificial Intelligence</div>
+            <div class="category" onclick="filterCourses('business')">Business</div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>Popular Online Courses</h2>
+
+        <div class="course-container">
+
+            <!-- Course 1 -->
+            <div class="course-card" data-category="programming">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                     alt="Python Programming Video Thumbnail">
+
+                <div class="course-content">
+                    <h3>Python Programming</h3>
+                    <p class="instructor">Instructor: John Smith</p>
+
+                    <p>Learn Python programming from basic concepts to advanced coding techniques.</p>
+
+                    <ul class="objectives">
+                        <li>Understand Python basics</li>
+                        <li>Learn loops and functions</li>
+                        <li>Build real-world projects</li>
+                    </ul>
+
+                    <div class="progress-section">
+                        <div class="progress-text">
+                            <span>Course Progress</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:60%"></div>
+                        </div>
+                    </div>
+
+                    <button class="enroll-btn" onclick="enroll('Python Programming')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card" data-category="design">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                     alt="Web Development Video Thumbnail">
+
+                <div class="course-content">
+                    <h3>Web Development</h3>
+                    <p class="instructor">Instructor: Sarah Johnson</p>
+
+                    <p>Learn to create attractive and responsive websites using HTML, CSS, and JavaScript.</p>
+
+                    <ul class="objectives">
+                        <li>Learn HTML structure</li>
+                        <li>Design websites using CSS</li>
+                        <li>Create interactive web pages</li>
+                    </ul>
+
+                    <div class="progress-section">
+                        <div class="progress-text">
+                            <span>Course Progress</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:35%"></div>
+                        </div>
+                    </div>
+
+                    <button class="enroll-btn" onclick="enroll('Web Development')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card" data-category="ai">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                     alt="Artificial Intelligence Video Thumbnail">
+
+                <div class="course-content">
+                    <h3>Artificial Intelligence</h3>
+                    <p class="instructor">Instructor: David Wilson</p>
+
+                    <p>Discover AI, machine learning, and intelligent systems with practical examples.</p>
+
+                    <ul class="objectives">
+                        <li>Understand AI concepts</li>
+                        <li>Explore machine learning</li>
+                        <li>Develop intelligent applications</li>
+                    </ul>
+
+                    <div class="progress-section">
+                        <div class="progress-text">
+                            <span>Course Progress</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:20%"></div>
+                        </div>
+                    </div>
+
+                    <button class="enroll-btn" onclick="enroll('Artificial Intelligence')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card" data-category="business">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                     alt="Business Analytics Video Thumbnail">
+
+                <div class="course-content">
+                    <h3>Business Analytics</h3>
+                    <p class="instructor">Instructor: Emily Brown</p>
+
+                    <p>Learn data analysis, business strategies, and decision-making techniques.</p>
+
+                    <ul class="objectives">
+                        <li>Analyze business data</li>
+                        <li>Understand market trends</li>
+                        <li>Improve decision-making</li>
+                    </ul>
+
+                    <div class="progress-section">
+                        <div class="progress-text">
+                            <span>Course Progress</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width:75%"></div>
+                        </div>
+                    </div>
+
+                    <button class="enroll-btn" onclick="enroll('Business Analytics')">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About EduLearn</h2>
+
+        <p>
+            EduLearn is an online learning platform designed to provide
+            quality education through professional courses.
+            Students can learn programming, web development,
+            artificial intelligence, and business skills.
+            Our goal is to make education accessible,
+            interactive, and enjoyable for everyone.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>EduLearn Online Learning Platform</h3>
+        <p>Email: support@edulearn.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>&copy; 2026 EduLearn. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+
+        // Course enrollment
+        function enroll(courseName) {
+            alert("Successfully enrolled in " + courseName + "!");
+        }
+
+        // Filter courses by category
+        function filterCourses(category) {
+            const courses = document.querySelectorAll(".course-card");
+
+            courses.forEach(course => {
+                if (category === "all" ||
+                    course.dataset.category === category) {
+                    course.style.display = "block";
+                } else {
+                    course.style.display = "none";
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>
